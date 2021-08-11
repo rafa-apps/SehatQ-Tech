@@ -1,0 +1,6 @@
+framework module Pods_SehatQ_TechTests {
+  umbrella header "Pods-SehatQ-TechTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

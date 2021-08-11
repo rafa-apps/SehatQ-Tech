@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="SehatQ_Tech" customModuleProvider="target">
+            <connections>
+                <outlet property="logoutButton" destination="JLZ-6i-ePA" id="lDE-f1-wef"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLZ-6i-ePA">
+                    <rect key="frame" x="15" y="508" width="289" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Sign Out"/>
+                    <connections>
+                        <action selector="didUserLogout:" destination="-1" eventType="touchUpInside" id="ImQ-Gh-ZQk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-0U-wpf">
+                    <rect key="frame" x="15" y="448.5" width="289" height="39.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Product History"/>
+                    <connections>
+                        <action selector="didProductHistory:" destination="-1" eventType="touchUpInside" id="f93-mO-jQz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49Q-hE-jy3">
+                    <rect key="frame" x="126.5" y="273.5" width="67" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jdh-0U-wpf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="2RW-ik-qCw"/>
+                <constraint firstItem="JLZ-6i-ePA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="3Py-6X-NTk"/>
+                <constraint firstItem="JLZ-6i-ePA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="IAY-Jw-4Gl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JLZ-6i-ePA" secondAttribute="bottom" constant="20" id="Jly-9n-3df"/>
+                <constraint firstItem="jdh-0U-wpf" firstAttribute="leading" secondItem="JLZ-6i-ePA" secondAttribute="leading" id="OCy-wq-JJP"/>
+                <constraint firstItem="49Q-hE-jy3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zfa-em-Qoi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JLZ-6i-ePA" secondAttribute="trailing" constant="16" id="fMJ-Pg-U2H"/>
+                <constraint firstItem="jdh-0U-wpf" firstAttribute="trailing" secondItem="JLZ-6i-ePA" secondAttribute="trailing" id="gTO-nY-Cca"/>
+                <constraint firstItem="49Q-hE-jy3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="gUb-Dc-aT3"/>
+                <constraint firstItem="JLZ-6i-ePA" firstAttribute="top" secondItem="jdh-0U-wpf" secondAttribute="bottom" constant="20" id="v6x-gN-f5h"/>
+            </constraints>
+            <point key="canvasLocation" x="138.75" y="128.87323943661971"/>
+        </view>
+    </objects>
+</document>
